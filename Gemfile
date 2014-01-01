@@ -34,11 +34,15 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Rubysl to fix problems with using Rubinius
+gem 'rubysl', '~> 2.0.15'
+gem 'racc', '~> 1.4.10'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+#gem 'unicorn', '~> 4.7.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
