@@ -42,7 +42,7 @@ gem 'racc', '~> 1.4.10'
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
-#gem 'unicorn', '~> 4.7.0'
+gem 'unicorn', '~> 4.7.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
