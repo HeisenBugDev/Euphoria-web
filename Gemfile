@@ -11,6 +11,9 @@ group :development, :test do
   # Capybara
   gem 'capybara', '~> 2.2.0'
 
+  # Cukes!
+  gem 'cucumber-rails', '~> 1.4.0'
+
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.8'
 end
