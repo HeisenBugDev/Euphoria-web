@@ -12,7 +12,7 @@ group :development, :test do
   gem 'capybara', '~> 2.2.0'
 
   # Cukes!
-  gem 'cucumber-rails', '~> 1.4.0'
+  gem 'cucumber-rails', '~> 1.4.0', require: false
 
   # Clean them databases
   gem 'database_cleaner', '~> 1.2.0'
