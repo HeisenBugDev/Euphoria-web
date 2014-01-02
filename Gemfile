@@ -1,10 +1,16 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
+# Cause we fancy
+gem 'rake', '~> 10.1.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
 group :development, :test do
+  # Coveralls so we don't get our normal clothes dirty
+  gem 'coveralls', '~> 0.7.0'
+
   # Rspec for test
   gem 'rspec-rails', '~> 2.14.1'
 
@@ -12,7 +18,10 @@ group :development, :test do
   gem 'capybara', '~> 2.2.0'
 
   # Cukes!
-  gem 'cucumber-rails', '~> 1.4.0'
+  gem 'cucumber-rails', '~> 1.4.0', require: false
+
+  # Clean them databases
+  gem 'database_cleaner', '~> 1.2.0'
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.8'

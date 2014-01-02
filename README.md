@@ -1,4 +1,4 @@
-# Euphoria
+# Euphoria [![Build Status](https://travis-ci.org/HeisenBugDev/Euphoria-web.png?branch=master)](https://travis-ci.org/HeisenBugDev/Euphoria-web)[![Coverage Status](https://coveralls.io/repos/HeisenBugDev/Euphoria-web/badge.png)](https://coveralls.io/r/HeisenBugDev/Euphoria-web)[![Code Climate](https://codeclimate.com/github/HeisenBugDev/Euphoria-web.png)](https://codeclimate.com/github/HeisenBugDev/Euphoria-web)[![Dependency Status](https://gemnasium.com/HeisenBugDev/Euphoria-web.png)](https://gemnasium.com/HeisenBugDev/Euphoria-web)
 
 Euphoria is a game network that is planned to soon launch. It is different in that it tracks your achievements and what you do across multiple games and then sends that data to the website where you can then purchase items for use on any of the games with the points you earned by doing stuff on the servers!
 

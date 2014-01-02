@@ -25,3 +25,5 @@ doc/
 .idea
 .rvmrc
 .secret
+
+coverage/
