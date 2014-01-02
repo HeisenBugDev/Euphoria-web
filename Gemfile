@@ -51,6 +51,12 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
+# Semantic UI
+gem 'therubyracer', '~> 0.12.0'
+gem 'less-rails', '~> 2.4.2'
+gem 'autoprefixer-rails', '~> 1.0.20131225'
+gem 'semantic-ui-rails', '~> 0.11.0'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
