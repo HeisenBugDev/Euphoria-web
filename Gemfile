@@ -14,6 +14,9 @@ group :development, :test do
   # Cukes!
   gem 'cucumber-rails', '~> 1.4.0'
 
+  # Clean them databases
+  gem 'database_cleaner', '~> 1.2.0'
+
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '1.3.8'
 end
