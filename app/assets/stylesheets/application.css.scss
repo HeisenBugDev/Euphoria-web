@@ -11,3 +11,14 @@
  *= require_self
  *= require_tree .
  */
+body {
+  font-family: "American Typewriter", "Inconsolata", "Menlo", "Consolas", "Bitstream Vera Sans Mono", "Courier New", monospace;
+}
+
+h1 {
+  font-weight: normal;
+  display:inline;
+  font-size: 48;
+  text-decoration: none;
+  border-bottom: 3px solid black;
+}
