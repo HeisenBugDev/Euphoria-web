@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
-
-ruby '2.1.0', :engine => 'rbx', :engine_version => '2.1.1'
+ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development, :test do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3', '1.3.8'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -33,10 +34,6 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-# Rubysl to fix problems with using Rubinius
-gem 'rubysl', '~> 2.0.15'
-gem 'racc', '~> 1.4.10'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
