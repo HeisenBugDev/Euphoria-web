@@ -1,9 +1,22 @@
 language: ruby
+bundler_args: --without development --path=~/.bundle
 rvm:
-  - "2.0.0"
+- 2.0.0
+before_install:
+- 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc'
+- gem install bundler bundle_cache
+- bundle_cache_install
 before_script:
-  - cp config/database.yml.travis config/database.yml
+- cp config/database.yml.travis config/database.yml
 script:
-  - bundle exex rake db:migrate RAILS_ENV=test
-  - bundle exec rspec -c spec
-  - bundle exec cucumber features
+- bundle exex rake db:migrate RAILS_ENV=test
+- bundle exec rspec -c spec
+- bundle exec cucumber features
+after_script:
+- bundle_cache
+env:
+  global:
+  - BUNDLE_ARCHIVE="gem-bundle"
+  - AWS_S3_BUCKET="Euphoria-gem-cache"
+  - RAILS_ENV=test
+  - secure: FS4QTkuS9HJZjXugpmWEkmZ8R0DyhbG0cLIKqFhO5aKq0GDjFrEAtU4hAxBsr+kVETpiZp9ZxLNGp6Jb+CeBPLnMo8APz0Nilbj4w3/JH7DKxWuZkzs7e+LGF0eiAKzrURJla3k0A/z0ZogJEFCsD50Y0zyMh9RoWzd7rOaJt58=
