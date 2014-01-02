@@ -1,6 +1,6 @@
 module ApplicationHelper
   def get_SHA
-    `git log -1 --format="%H"`
+    `git log -1 --format="%H"`.delete("\n")
   end
 
   def get_short_SHA
