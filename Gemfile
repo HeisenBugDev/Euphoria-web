@@ -8,6 +8,9 @@ gem 'rake', '~> 10.1.1'
 gem 'rails', '4.0.2'
 
 group :development, :test do
+  # Coveralls so we don't get our normal clothes dirty
+  gem 'coveralls', '~> 0.7.0'
+
   # Rspec for test
   gem 'rspec-rails', '~> 2.14.1'
 
