@@ -24,7 +24,7 @@
 
 @include declare-font-face('American Typewriter', 'AmericanTypewriter');
 @include declare-font-face('American Typewriter', 'AmericanTypewriter-Bold', 700);
-@include declare-font-face('American Typewriter', 'AmericanTypewriter-200');
+@include declare-font-face('American Typewriter', 'AmericanTypewriter-Light', 200);
 
 body {
   font-family: "American Typewriter", "Inconsolata", "Menlo", "Consolas", "Bitstream Vera Sans Mono", "Courier New", monospace;
