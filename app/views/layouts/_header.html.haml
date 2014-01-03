@@ -5,9 +5,7 @@
     .right.menu
       %a.item{:href => "#"} Leaderboards
       - if user_signed_in?
-        %span.item
-          Welcome
-          = current_user.username
+        = link_to "Welcome #{current_user.username}", edit_user_registration_path, :class => 'item'
         = link_to 'Logout', destroy_user_session_path, :method => 'delete', :class => 'item'
       - else
         = link_to 'Login', new_user_session_path, :class => 'item'
