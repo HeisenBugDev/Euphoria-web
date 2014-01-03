@@ -25,5 +25,6 @@ doc/
 .idea
 .rvmrc
 .secret
+.devise.secret
 
 coverage/
