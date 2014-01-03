@@ -57,15 +57,20 @@ h2 {
   font-size: 22px;
 }
 
-.centered-text {
+.centered {
   text-align: center;
 }
 
-p.centered-text {
+p.centered {
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
   max-width: 50em;
+}
+
+.no-underline {
+  border-style: none !important;
+  border-width: 0px;
 }
 
 .featurette-divider {
@@ -74,7 +79,7 @@ p.centered-text {
   margin-right: auto;
   margin-bottom: 1.5em;
   margin-top: 1.5em;
-  max-width: 100em;
+  max-width: 100%;
 }
 
 footer {
