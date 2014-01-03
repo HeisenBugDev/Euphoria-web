@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+  @font-face {
+    font-family: '#{$font-family}';
+    src: url(font-path('#{$font-filename}.eot?#iefix')) format('embedded-opentype'),
+    url(font-path('#{$font-filename}.woff')) format('woff'),
+    url(font-path('#{$font-filename}.ttf')) format('truetype'),
+    url(font-path('#{$font-filename}.svg##{$font-family}')) format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-stretch: $font-stretch;
+  }
+}
+
+@include declare-font-face('American Typewriter', 'AmericanTypewriter');
+@include declare-font-face('American Typewriter', 'AmericanTypewriter-Bold', 700);
+@include declare-font-face('American Typewriter', 'AmericanTypewriter-200');
+
+body {
+  font-family: "American Typewriter", "Inconsolata", "Menlo", "Consolas", "Bitstream Vera Sans Mono", "Courier New", monospace;
+  margin: 0px;
+}
+
+
+h1 {
+  font-weight: normal;
+  display: inline;
+  font-size: 48px;
+  text-decoration: none;
+  border-bottom: 3px solid black;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.bg-gray {
+  background-color: #DBDEDE;
+}
+
+.sub-header {
+  color: #3C4041;
+  font-size: 22px;
+}
+
+.yielded-content {
+ padding-top: 3em;
+}
+
+.centered {
+  text-align: center;
+}
+
+p.centered {
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50em;
+}
+
+.no-underline {
+  border-style: none !important;
+  border-width: 0px;
+}
+
+.featurette-divider {
+  border: 1px solid #97A3A4;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  max-width: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+.dark-blue-gray {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #2E393A !important;
+  color: #F1F1F1;
+}
+

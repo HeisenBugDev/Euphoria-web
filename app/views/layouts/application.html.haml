@@ -1,10 +1,15 @@
 !!!
 %html
   %head
-    %title EuphoriaWeb
+    %title Euphoria
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
-  %body
-    = yield
-  = get_short_SHA
+  %body.bg-gray
+    = render 'layouts/header'
+    .yielded-content
+      .ui.page.grid
+        .sixteen.wide.column
+          .row
+            = yield
+    = render 'layouts/footer'
