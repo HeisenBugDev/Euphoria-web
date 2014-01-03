@@ -43,6 +43,11 @@ h1 {
   border-bottom: 3px solid black;
 }
 
+h2 {
+  font-size: 2em;
+  font-weight: normal;
+}
+
 .bg-gray {
   background-color: #DBDEDE;
 }
@@ -64,11 +69,12 @@ p.centered-text {
 }
 
 .featurette-divider {
+  border: 1px solid #97A3A4;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
   max-width: 100em;
-  height: 1px;
-  background-color: #97A3A4;
 }
 
 footer {
