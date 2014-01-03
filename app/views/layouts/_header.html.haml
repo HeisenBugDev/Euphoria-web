@@ -4,5 +4,8 @@
       %a.bigger-text{:href => root_path} Euphoria
     .right.menu
       %a.item{:href => "#"} Leaderboard
-      = link_to 'Login', new_user_session_path, :class => 'item'
-      = link_to 'Sign up', new_user_registration_path, :class => 'item'
+      - if user_signed_in?
+        = link_to 'Logout', destroy_user_session_path, :method => 'delete', :class => 'item'
+      - else
+        = link_to 'Login', new_user_session_path, :class => 'item'
+        = link_to 'Sign up', new_user_registration_path, :class => 'item'
