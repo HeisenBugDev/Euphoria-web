@@ -11,9 +11,6 @@
       .ui.page.grid
         .sixteen.wide.column
           .row
-            %p.ui.info.message
-              = notice
-            %p.ui.error.message
-              = alert
+            = render 'layouts/flash'
             = yield
     = render 'layouts/footer'
