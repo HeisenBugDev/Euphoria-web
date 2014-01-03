@@ -6,8 +6,10 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body.bg-gray
-    .ui.page.grid
-      .sixteen.wide.column
-        .row
-          = yield
+    = render 'layouts/header'
+    .yielded-content
+      .ui.page.grid
+        .sixteen.wide.column
+          .row
+            = yield
     = render 'layouts/footer'
