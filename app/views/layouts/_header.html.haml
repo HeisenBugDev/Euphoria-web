@@ -7,7 +7,7 @@
       - if user_signed_in?
         %span.item
           Welcome
-          = current_user.email
+          = current_user.username
         = link_to 'Logout', destroy_user_session_path, :method => 'delete', :class => 'item'
       - else
         = link_to 'Login', new_user_session_path, :class => 'item'
