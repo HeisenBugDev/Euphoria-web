@@ -31,6 +31,7 @@
 
 body {
   font-family: "American Typewriter", "Inconsolata", "Menlo", "Consolas", "Bitstream Vera Sans Mono", "Courier New", monospace;
+  margin: 0px;
 }
 
 
@@ -69,3 +70,15 @@ p.centered-text {
   height: 1px;
   background-color: #97A3A4;
 }
+
+footer {
+  width: 100%;
+}
+
+.dark-blue-gray {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #2E393A !important;
+  color: #F1F1F1;
+}
+
