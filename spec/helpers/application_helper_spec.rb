@@ -7,4 +7,12 @@ describe ApplicationHelper do
       expect(get_short_SHA.length).to eq(7)
     end
   end
+
+  describe "Flash classes" do
+    it 'should respond with the correct class' do
+      expect(flash_class(:notice)).to eq('info')
+      expect(flash_class(:error)).to eq('error')
+      expect(flash_class(:alert)).to eq('warning')
+    end
+  end
 end
