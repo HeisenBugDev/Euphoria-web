@@ -12,6 +12,8 @@
  *= require_tree .
  */
 
+@import "colors";
+
 @mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
   @font-face {
     font-family: '#{$font-family}';
@@ -46,11 +48,11 @@ h2 {
 }
 
 .bg-gray {
-  background-color: #DBDEDE;
+  background-color: $background;
 }
 
 .sub-header {
-  color: #3C4041;
+  color: $murky-gray;
   font-size: 22px;
 }
 
@@ -75,7 +77,7 @@ p.centered {
 }
 
 .featurette-divider {
-  border: 1px solid #97A3A4;
+  border: 1px solid $light-gray;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
@@ -90,7 +92,7 @@ footer {
 .dark-blue-gray {
   padding-left: 0px;
   padding-right: 0px;
-  background-color: #2E393A !important;
-  color: #F1F1F1;
+  background-color: $dark-blue-gray !important;
+  color: $almost-white-gray;
 }
 
