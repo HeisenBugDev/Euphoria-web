@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   attr_accessor :login
-  validates_uniqueness_of :username
+  validates :username, :presence => true, :uniqueness => true
 
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
