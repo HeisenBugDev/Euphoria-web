@@ -8,6 +8,8 @@ Bundler.require(:default, Rails.env)
 
 module EuphoriaWeb
   class Application < Rails::Application
+    GIT_SHA = `git log -1 --format="%H"`.delete("\n")
+    GIT_SHA_SHORT = GIT_SHA.truncate(7,:omission => '')
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
