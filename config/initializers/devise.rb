@@ -19,8 +19,6 @@ Devise.setup do |config|
     end
   end
   config.secret_key = secure_token;
-  
-  config.allow_insecure_token_lookup = true
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
