@@ -11,10 +11,12 @@ Then(/^he should see an error message$/) do
 end
 
 Given(/^the user has an account$/) do
-  @user = User.create!({ :email                 => "user@example.com",
+  @user = User.new({ :email                 => "user@example.com",
                          :password              => 'foobarbatman',
                          :password_confirmation => 'foobarbatman',
                          :username              => 'user' })
+  @user.skip_confirmation!
+  @user.save!
 end
 
 When(/^the user submits valid login information$/) do
