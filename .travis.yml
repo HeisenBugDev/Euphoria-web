@@ -14,5 +14,4 @@ deploy:
     secure: dZ/0IrNo9UpQ714Ml+nOA3DORqgm9gjX08BOYFwlO9IIS7QRi3RGbzonEhO1K3LAVZFhxqpXUClEANa0MkSK5Crj6C9V0TJxDesXT2hysLoo6vtEzVBS0Gn3jPeAyGa03MhbF59nEQx0HQPfJ1YnzsNBMrXE7NW1IBk3yuQhAEg=
   run:
     - "rake db:migrate"
-    - "heroku config:set GIT_SHA\=\`git log \-1 \-\-format\=\"\%H\"\`"
   on: master

@@ -8,13 +8,6 @@ Bundler.require(:default, Rails.env)
 
 module EuphoriaWeb
   class Application < Rails::Application
-    if ENV["GIT_SHA"].blank?
-      GIT_SHA = `git log -1 --format="%H"`.delete("\n")
-    else
-      GIT_SHA = ENV["GIT_SHA"]
-    end
-    GIT_SHA_SHORT = GIT_SHA.truncate(7, :omission => '')
-
     config.i18n.enforce_available_locales = true
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
