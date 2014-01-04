@@ -17,6 +17,9 @@ group :development, :test do
   # Capybara
   gem 'capybara', '~> 2.2.0'
 
+  # For testing with emails
+  gem 'email_spec', '~> 1.5.0'
+
   # Cukes!
   gem 'cucumber-rails', '~> 1.4.0', require: false
 

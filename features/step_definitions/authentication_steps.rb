@@ -52,3 +52,16 @@ end
 Then(/^he should see an error message$/) do
   expect(page).to have_selector('div.ui.message.error')
 end
+
+And(/^he should have an email$/) do
+  mailbox_for("foobar@example.com").size.should == 1
+end
+
+
+Then(/^he opens that email$/) do
+  open_email("foobar@example.com")
+end
+
+And(/^he clicks on the first link$/) do
+  click_first_link_in_email
+end
