@@ -1,9 +1,8 @@
-%h2 Resend unlock instructions
-= form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post }) do |f|
-  = devise_error_messages!
-  %div
-    = f.label :email
-    %br/
-    = f.email_field :email, :autofocus => true
-  %div= f.submit "Resend unlock instructions"
-= render "devise/shared/links"
+.login
+  %h2 Resend unlock instructions
+  = form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post }) do |f|
+    = devise_error_messages!
+    %div
+      = f.text_field :login, :autofocus => true, :placeholder => 'Login', :class => 'center'
+    %div= f.submit "Resend unlock instructions", :class => 'center signin'
+  = render "devise/shared/links"
