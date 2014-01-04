@@ -1,0 +1,67 @@
+@import "colors";
+
+//noinspection ALL
+@mixin placeholder {
+  &.placeholder {
+    @content
+  }
+  &:-moz-placeholder {
+    @content
+  }
+  &::-webkit-input-placeholder {
+    @content
+  }
+}
+
+.login {
+  @extend .dark-blue-gray;
+  padding: 2em;
+  padding-top: 0.5em !important;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+
+  a {
+    text-decoration: none;
+    background-color: $light-gray;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .3em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+    color: black !important;
+  }
+
+  .signin {
+    font-family: "American Typewriter";
+    background-color: $light-gray !important;
+    color: black !important;
+  }
+
+  .signin:hover {
+    background-color: #818d8e !important;
+  }
+
+  input.center {
+    font-family: "American Typewriter";
+    border: 1px solid $light-gray;
+    background-color: $almost-white-gray;
+    height: 2em;
+    line-height: 2em;
+    width: 15em;
+    font-size: 1.2em;
+    color: $murky-gray;
+    padding-left: .5em;
+    margin-bottom: 1em;
+    @include placeholder {
+      font-family: "American Typewriter";
+      color: $murky-gray;
+      text-align: center;
+      padding-right: .5em;
+    }
+  }
+}

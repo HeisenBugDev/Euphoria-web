@@ -1,0 +1,12 @@
+$dark-blue-gray: #2E393A;
+$light-gray: #97A3A4;
+$almost-white-gray: #F1F1F1;
+$background: #DBDEDE;
+$murky-gray: #3C4041;
+
+.dark-blue-gray {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: $dark-blue-gray !important;
+  color: $almost-white-gray;
+}

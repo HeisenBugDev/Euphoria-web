@@ -1,0 +1,4 @@
+- [:notice, :error, :alert].each do |level|
+  - unless flash[level].blank?
+    %div{:class => "ui message #{flash_class(level)}"}
+      = content_tag :p, flash[level]

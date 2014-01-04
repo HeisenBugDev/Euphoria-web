@@ -14,6 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+out/
 
 # Ignore other unneeded files.
 database.yml
@@ -25,5 +26,6 @@ doc/
 .idea
 .rvmrc
 .secret
+.devise.secret
 
 coverage/
