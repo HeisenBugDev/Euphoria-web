@@ -2,10 +2,12 @@ require 'spec_helper'
 
 describe User do
   before do
-    @user = User.create!({ :email                 => "user@example.com",
-                           :password              => 'foobarbatman',
-                           :password_confirmation => 'foobarbatman',
-                           :username              => 'user' })
+    @user = User.new({ :email                 => "user@example.com",
+                       :password              => 'foobarbatman',
+                       :password_confirmation => 'foobarbatman',
+                       :username              => 'user' })
+    @user.skip_confirmation!
+    @user.save!
   end
 
   subject { @user }
