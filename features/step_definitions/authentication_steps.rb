@@ -6,15 +6,15 @@ When(/^he submits invalid login information$/) do
   click_button 'Login'
 end
 
-Then(/^he should see an error message$/) do
+Then(/^he should see a warning message$/) do
   expect(page).to have_selector('div.ui.message.warning')
 end
 
 Given(/^the user has an account$/) do
   @user = User.new({ :email                 => "user@example.com",
-                         :password              => 'foobarbatman',
-                         :password_confirmation => 'foobarbatman',
-                         :username              => 'user' })
+                     :password              => 'foobarbatman',
+                     :password_confirmation => 'foobarbatman',
+                     :username              => 'user' })
   @user.skip_confirmation!
   @user.save!
 end
@@ -31,4 +31,24 @@ end
 
 Then(/^he should see a signout link$/) do
   expect(page).to have_link('Logout', href: destroy_user_session_path)
+end
+
+When(/^a user visits the signup page$/) do
+  visit new_user_registration_path
+end
+
+And(/^submits invalid signup information$/) do
+  click_button "Sign up"
+end
+
+And(/^submits valid signup information$/) do
+  fill_in "user_username", with: "foobar"
+  fill_in "user_email", with: "foobar@example.com"
+  fill_in "user_password", with: "password"
+  fill_in "user_password_confirmation", with: "password"
+  click_button "Sign up"
+end
+
+Then(/^he should see an error message$/) do
+  expect(page).to have_selector('div.ui.message.error')
 end
