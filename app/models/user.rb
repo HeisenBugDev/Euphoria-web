@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
     conditions = warden_conditions.dup
     if login = conditions.delete(:login)
       where(conditions).where(["username = :value OR lower(email) = lower(:value)", { :value => login }]).first
+    else
+      where(conditions).first
     end
   end
 
