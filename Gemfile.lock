@@ -27,7 +27,7 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.1)
     atomic (1.1.14)
-    autoprefixer-rails (1.0.20131225)
+    autoprefixer-rails (1.0.20140103)
       execjs
     bcrypt-ruby (3.1.2)
     builder (3.1.4)
