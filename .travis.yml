@@ -1,9 +1,12 @@
 language: ruby
 rvm:
-  - "2.0.0"
+- 2.0.0
 before_script:
-  - cp config/database.yml.travis config/database.yml
+- cp config/database.yml.travis config/database.yml
 script:
-  - bundle exec rake db:migrate RAILS_ENV=test
-  - bundle exec rspec -c spec
-  - bundle exec cucumber features
+- bundle exec rake db:migrate RAILS_ENV=test
+- bundle exec rspec -c spec
+- bundle exec cucumber features
+deploy:
+  api_key:
+    secure: dZ/0IrNo9UpQ714Ml+nOA3DORqgm9gjX08BOYFwlO9IIS7QRi3RGbzonEhO1K3LAVZFhxqpXUClEANa0MkSK5Crj6C9V0TJxDesXT2hysLoo6vtEzVBS0Gn3jPeAyGa03MhbF59nEQx0HQPfJ1YnzsNBMrXE7NW1IBk3yuQhAEg=
