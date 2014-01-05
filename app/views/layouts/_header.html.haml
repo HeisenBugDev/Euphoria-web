@@ -1,7 +1,6 @@
 %header.ui.grid.fixed.transparent.inverted.main.menu.dark-blue-gray
   .container
-    .title.item
-      %a.bigger-text{:href => root_path} Euphoria
+    %a.title.bigger-text.item{:href => root_path} Euphoria
     .right.menu
       %a.item{:href => "#"} Leaderboards
       - if user_signed_in?
