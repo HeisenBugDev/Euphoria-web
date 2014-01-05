@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140104195335) do
+ActiveRecord::Schema.define(version: 20140105152705) do
+
+  create_table "stats", force: true do |t|
+    t.string   "type"
+    t.integer  "quantity"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "stats", ["user_id"], name: "index_stats_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
