@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140105152705) do
+ActiveRecord::Schema.define(version: 20140105155749) do
 
   create_table "stats", force: true do |t|
-    t.string   "type"
+    t.string   "identifier"
     t.integer  "quantity"
     t.integer  "user_id"
     t.datetime "created_at"
