@@ -1,6 +1,16 @@
 %header.ui.grid.fixed.transparent.inverted.main.menu.dark-blue-gray
-  .container
+  .computer.only.row
     %a.title.bigger-text.item{:href => root_path} Euphoria
+    .right.menu
+      %a.item{:href => "#"} Leaderboards
+      - if user_signed_in?
+        = link_to "Welcome #{current_user.username}", edit_user_registration_path, :class => 'item'
+        = link_to 'Logout', destroy_user_session_path, :method => 'delete', :class => 'item'
+      - else
+        = link_to 'Login', new_user_session_path, :class => 'item'
+        = link_to 'Sign up', new_user_registration_path, :class => 'item'
+  .mobile.tablet.only.row
+    %a.title.bigger-text.item{:href => root_path} Euphoria Mobile
     .right.menu
       %a.item{:href => "#"} Leaderboards
       - if user_signed_in?
