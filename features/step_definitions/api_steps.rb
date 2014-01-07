@@ -43,10 +43,10 @@ Then(/^the stat's count should increment$/) do
 end
 
 Given(/^it requests an unsecured page$/) do
-  pending
+  visit root_path
 end
 
-Given(/^it does not provide authentication$/) do
+ Given(/^it does not provide authentication$/) do
   pending
 end
 
