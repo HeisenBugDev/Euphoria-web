@@ -6,8 +6,8 @@ Euphoria Gaming is a game network that is planned to soon launch. It is differen
 
 Fork the repo, write tests, code a feature, submit a PR.
 
-If you are having problems on mac with bundler, try running this instead `CC=gcc bundle install`. Make sure gcc is a command first.
+If you are having problems on mac with bundler, try running this instead `CC=gcc bundle install`. Make sure gcc is a command first and if not, use the good 'ol homebrew to install it!
 
 ## Bugs and Planned Features
 
-We are going to be using Trello for doing stuff internally. You can view that [here](https://trello.com/b/BluLqh84/euphoria-web). If you find a bug, please report it by creating an issue on this repo. However, before doing that, please make sure both the Trello board and this repo does not have a ticket opened for it (dupes are bad :sad:).
+We are going to be using Trello for doing stuff internally. You can view that [here](https://trello.com/b/BluLqh84/euphoria-web). If you find a bug, please report it by creating an issue on this repo. However, before doing that, please make sure both the Trello board and this repo does not have a ticket opened for it (dupes are bad :cry:).
