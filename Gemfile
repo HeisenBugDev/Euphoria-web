@@ -52,7 +52,7 @@ gem 'jquery-rails'
 gem 'devise', '~> 3.2.2'
 
 # Anothe gem to work with devise for token authentication
-gem 'simple_token_authentication', '~> 1.0.0.pre.beta'
+gem 'simple_token_authentication', '~> 1.0.0.pre.beta.4'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
