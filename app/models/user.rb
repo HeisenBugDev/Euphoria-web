@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  acts_as_token_authenticatable
   attr_accessor :login
   validates :username, :presence => true, :uniqueness => true
   has_many :stats, :dependent => :destroy
