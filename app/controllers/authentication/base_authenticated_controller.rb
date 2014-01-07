@@ -1,0 +1,3 @@
+class ApplicationController < ApplicationController
+  acts_as_token_authentication_handler
+end
