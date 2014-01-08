@@ -51,9 +51,6 @@ gem 'jquery-rails'
 # Devise for authentication
 gem 'devise', '~> 3.2.2'
 
-# Anothe gem to work with devise for token authentication
-gem 'simple_token_authentication', '~> 1.0.0.beta.5'
-
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
@@ -84,6 +81,9 @@ gem 'unicorn', '~> 4.7.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
+
+# Another gem to work with devise for token authentication
+gem 'simple_token_authentication', '1.0.0.beta.5'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
