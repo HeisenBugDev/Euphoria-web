@@ -1,2 +1,2 @@
-class Api::StatsController < ApplicationController
+class Api::StatsController < Authentication::BaseAuthController
 end

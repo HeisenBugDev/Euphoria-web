@@ -1,3 +1,3 @@
-class ApplicationController < ApplicationController
+class Authentication::BaseAuthController < ApplicationController
   acts_as_token_authentication_handler
 end
