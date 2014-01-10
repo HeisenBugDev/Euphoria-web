@@ -8,6 +8,9 @@ gem 'rake', '~> 10.1.1'
 gem 'rails', '4.0.2'
 
 group :development, :test do
+  # Factory_girl
+  gem 'factory_girl', '~> 4.3.0'
+
   # Coveralls so we don't get our normal clothes dirty
   gem 'coveralls', '~> 0.7.0'
 
