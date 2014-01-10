@@ -6,7 +6,7 @@ Euphoria Gaming is a game network that is planned to soon launch. It is differen
 
 Fork the repo, write tests, code a feature, submit a PR.
 
-If you are having problems on mac with bundler, try running this instead `CC=gcc bundle install`. Make sure gcc is a command first and if not, use the good 'ol homebrew to install it!
+If you are having problems on mac with bundler, try running this instead `CC=gcc bundle install`. Make sure gcc is a command first and if not, use the good 'ol homebrew to install it (Version 4.2 is the most common I've seen.)!
 
 ## Bugs and Planned Features
 
