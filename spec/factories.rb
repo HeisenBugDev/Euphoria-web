@@ -2,9 +2,9 @@ FactoryGirl.define do
   factory :user do
     username 'foobar'
     email 'foobar@example.com'
-    password 'foobar'
-    password_confirmation 'foobar'
+    password 'foobarbaz'
+    password_confirmation 'foobarbaz'
 
-    after_create { |user| user.confirm! }
+    after(:create) { |user| user.confirm! }
   end
 end
