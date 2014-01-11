@@ -1,6 +1,6 @@
-require_relative '../authentication/base_authenticated_controller'
-class Api::StatsController < Authentication::BaseAuthController
+class Api::StatsController < Authentication::BaseAuthenticatedController
+  respond_to :json
   def show
-    "dearp"
+    respond_with({ :bacon => "hai" })
   end
 end
