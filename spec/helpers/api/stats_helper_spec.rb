@@ -11,15 +11,5 @@ require 'spec_helper'
 #   end
 # end
 describe Api::StatsHelper do
-  before do
 
-  end
-  describe 'Authentication' do
-    describe 'If authentication not provided' do
-
-    end
-    describe 'If authentication is provided' do
-
-    end
-  end
 end
