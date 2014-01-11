@@ -6,7 +6,7 @@ EuphoriaWeb::Application.routes.draw do
   # Set the root (/)
   root 'static_pages#home'
 
-  namespace :api, :defaults => { :format => 'json ' } do
+  namespace :api, :defaults => { :format => 'json' } do
     resource :stats
   end
 
