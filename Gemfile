@@ -8,6 +8,9 @@ gem 'rake', '~> 10.1.1'
 gem 'rails', '4.0.2'
 
 group :development, :test do
+  # Lightning fast
+  gem 'zeus'
+
   # Factory_girl
   gem 'factory_girl_rails', '~> 4.3.0'
 
