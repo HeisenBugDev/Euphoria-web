@@ -11,12 +11,7 @@ Then(/^he should see a warning message$/) do
 end
 
 Given(/^the user has an account$/) do
-  @user = User.new({ :email                 => "user@example.com",
-                     :password              => 'foobarbatman',
-                     :password_confirmation => 'foobarbatman',
-                     :username              => 'user' })
-  @user.skip_confirmation!
-  @user.save!
+  @user = FactoryGirl.create(:user)
 end
 
 When(/^the user submits valid login information$/) do

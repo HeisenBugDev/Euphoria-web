@@ -8,6 +8,12 @@ gem 'rake', '~> 10.1.1'
 gem 'rails', '4.0.2'
 
 group :development, :test do
+  # Lightning fast
+  gem 'zeus'
+
+  # Factory_girl
+  gem 'factory_girl_rails', '~> 4.3.0'
+
   # Coveralls so we don't get our normal clothes dirty
   gem 'coveralls', '~> 0.7.0'
 
@@ -81,6 +87,9 @@ gem 'unicorn', '~> 4.7.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
+
+# Another gem to work with devise for token authentication
+gem 'simple_token_authentication', '~> 1.0.0.beta.5'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
